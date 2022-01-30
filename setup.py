@@ -7,7 +7,7 @@ Author: Ron Nathaniel
 import setuptools
 
 PACKAGE = 'askquestions'
-VERSION = '0.1.2'
+VERSION = '0.1.3'
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 with open('requirements.txt') as f:
