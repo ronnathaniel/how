@@ -28,7 +28,6 @@ def parse_args() -> dict:
     for op, kwargs in ARGS.items():
         parser.add_argument(op, **kwargs)
     args_parsed = vars(parser.parse_args())
-    print(args_parsed)
     query = args_parsed.get('query', [])
     n = args_parsed.get('n', 5)
     return {
