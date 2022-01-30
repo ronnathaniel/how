@@ -1,2 +1,2 @@
-google
-colorama
+googlesearch-python
+

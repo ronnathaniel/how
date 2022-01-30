@@ -49,7 +49,9 @@ Arguments
 
 ## FOSS 
 
-[`colorama`](https://pypi.org/project/colorama/) - Simple cross-platform colored terminal text in Python.
+[`googlesearch-python`](https://pypi.org/project/googlesearch-python/) - A Python library for scraping the Google search engine.
+
+
 
 ## Community
 
