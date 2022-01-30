@@ -7,7 +7,7 @@ Author: Ron Nathaniel
 import setuptools
 
 PACKAGE = 'askquestions'
-VERSION = '0.1.3'
+VERSION = '0.2.0'
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 with open('requirements.txt') as f:
@@ -18,6 +18,7 @@ setuptools.setup(
     version=VERSION,
     author="ronnathaniel",
     author_email="rnathaniel7@gmail.com",
+    short_description="StackOverflow in your Terminal.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=['how'],
