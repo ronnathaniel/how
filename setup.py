@@ -1,8 +1,8 @@
 
 import setuptools
 
-PACKAGE = 'how'
-VERSION = '0.0.1'
+PACKAGE = 'askquestions'
+VERSION = '0.0.2'
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 with open('requirements.txt') as f:
@@ -14,6 +14,7 @@ setuptools.setup(
     author="ronnathaniel",
     author_email="rnathaniel7@gmail.com",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=['how'],
     package_data={'how': ['*.pem']},
     python_requires=">=3.6",
@@ -21,6 +22,7 @@ setuptools.setup(
         'console_scripts': ['how = how.__main__:run']
     },
     install_requires=required,
+    include_package_data=True,
     url="https://github.com/ronnathaniel/how",
     project_urls={
         "Bug Tracker": "https://github.com/ronnathaniel/how/issues"
