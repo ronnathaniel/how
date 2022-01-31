@@ -1,2 +1,4 @@
 googlesearch-python
-
+beautifulsoup4
+requests
+colorama

@@ -16,8 +16,7 @@ def run():
     n = args.get('n')
 
     results = ask_sof(query, limit=n)
-
-    display_results(gen_next_n(results, n))
+    display_results(results)
 
 
 if __name__ == '__main__':

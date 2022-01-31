@@ -10,27 +10,27 @@ from googlesearch import search
 from how.util import gen_next_n
 
 
-def ask_google(query: str, limit=20,) -> Generator:
+def ask_google(query: str, limit=20,) -> list:
     """
     Ask Google Anything.
     :param query: Query to google search
     :param limit: Total results to return
-    :return: Lazy Generator of result URIs
+    :return: List of result URIs
     """
     results = search(
         query,
-        stop=limit,
+        num_results=limit,
     )
 
     return results
 
 
-def ask_sof(query: str, limit=20, ) -> Generator:
+def ask_sof(query: str, limit=20, ) -> list:
     """
     Ask StackOverflow Anything.
     :param query: Query to StackOverflow search
     :param limit: Total results to return
-    :return: Lazy Generator of result URIs
+    :return: List of result URIs
     """
     results = ask_google(
         query=query + ' site:stackoverflow.com',
