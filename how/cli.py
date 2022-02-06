@@ -34,7 +34,7 @@ ARGS = {
         'type': str,
         'nargs': 1,
         'help': 'Search different websites, this will not include stack overflow unless specified.',
-        'metavar': 'url',
+        'metavar': 'url[,url,...]',
     },
 }
 
