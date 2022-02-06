@@ -4,7 +4,6 @@ Ask More Questions.
 Author: Ron Nathaniel
 """
 
-from tkinter.messagebox import QUESTION
 from how.cli import parse_args, display_results
 from how.util import gen_next_n
 from how.crawler import ask_any, ask_sof, ask_google

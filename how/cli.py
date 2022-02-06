@@ -65,7 +65,7 @@ def parse_args() -> dict:
 
 def display_results(res: list,header:str = None) -> None:
     if header:
-        print("Results from {0}".format(header))
+        print(u'\033[4m' + "Results from {0}".format(header) + u'\033[0m')
     for r in res:
         print(u'\u279c' + '\r\t', end='')
         print(r)
