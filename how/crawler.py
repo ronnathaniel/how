@@ -17,6 +17,7 @@ def ask_google(query: str, limit=20,) -> list:
     :param limit: Total results to return
     :return: List of result URIs
     """
+
     results = search(
         query,
         num_results=limit,
@@ -24,6 +25,19 @@ def ask_google(query: str, limit=20,) -> list:
 
     return results
 
+def ask_any(query: str, limit=20, site: str = 'stackoverflow.com') -> list:
+    """
+    Ask Any Site, Anything.
+    :param query: Query to search
+    :param limit: Total results to return
+    :param site: Site to search
+    :return: List of result URIs
+    """
+    results = ask_google(
+        query=query+ ' site:{0}'.format(site),
+        limit=limit
+    )
+    return results
 
 def ask_sof(query: str, limit=20, ) -> list:
     """
@@ -32,12 +46,7 @@ def ask_sof(query: str, limit=20, ) -> list:
     :param limit: Total results to return
     :return: List of result URIs
     """
-    results = ask_google(
-        query=query + ' site:stackoverflow.com',
-        limit=limit
-    )
-
-    return results
+    return ask_any(query,limit=limit)
 
 
 if __name__ == '__main__':

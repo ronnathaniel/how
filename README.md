@@ -10,7 +10,9 @@
 - [Usage](#usage)
 - [Foss](#foss)
 - [Community](#community)
+- [Contributors](#contributors)
 - [Copyright](#copyright)
+
 
 
 
@@ -60,6 +62,11 @@ We want to build a community of question-askers.
 After all, it is only when we ask questions that we can learn anything.
 
 Contributions are more than welcome, maintainers are always invited, and if you can ask questions you're a VIP.
+
+## Contributors
+>[![](https://github.com/ronnathaniel.png?size=50)](https://github.com/ronnathaniel) Ron Nathaniel
+
+>[![](https://github.com/itaybachar.png?size=50)](https://github.com/itaybachar) Itay Bachar
 
 ## Copyright
 
