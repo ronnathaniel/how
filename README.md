@@ -10,21 +10,23 @@
 - [Usage](#usage)
 - [Foss](#foss)
 - [Community](#community)
+- [Contributors](#contributors)
 - [Copyright](#copyright)
+
 
 
 
 ## Installation
 
-Install as you would with pip **using pypi** under the name `askquestions` - 
+Install **using pypi**  -->
 
     $ pip3 install askquestions
     
-Or **git** - 
+Or **git** -->
 
     $ pip3 install git+https://github.com/ronnathaniel/how
     
-Or **from source** -
+Or **from source** -->
 
     $ git clone https://github.com/ronnathaniel/how.git
     $ cd how
@@ -32,25 +34,41 @@ Or **from source** -
 
 ## Usage
 
-    $ how QUERY ... [-n N]
+    $ how QUERY*
 
 Ask your terminal directly.
 
     $ how do i exit vim
-    ➜       https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor
-    ➜       https://stackoverflow.com/questions/25919461/i-cannot-exit-vim-i-hit-escape-and-tried-q-x-qx
-    ➜       https://stackoverflow.com/questions/47315349/how-to-exit-the-vim-editor-when-q-or-x-doesnt-work
-    ➜       https://stackoverflow.com/questions/1879219/how-to-temporarily-exit-vim-and-go-back
-    ➜       https://stackoverflow.com/questions/31140908/how-do-i-save-and-quit-from-vim
+    ➜       ...
+    ➜       ...
 
-Arguments
+Optional Arguments
 
-- `-n`: (int) Amount of links to return. Defaults to 5.
+**shorthand**|**longhand**|**type**|**default**|**description**
+:-----:|:-----:|:-----:|:-----:|:-----:
+-n|--num|int|5|Amount of links to return
+-g|--google|-|False|If exists
+-s|--sites|comma-sep list| stackoverflow.com| sites to check for using google.com
+    
+And have fun.
+
+    $ how -n 10 -s youtube.com,stackoverflow.com,example.com exit vi
+    
+    Results from youtube.com:
+    ➜       ...
+    ➜       ...
+   
+    Results from stackoverflow.com:
+    ➜       ...
+    ➜       ...
+    
+    Results from example.com:
+    None found.
+    If a discrepency is found ➜ contact the team at rnathaniel7@gmail.com.
 
 ## FOSS 
 
-[`googlesearch-python`](https://pypi.org/project/googlesearch-python/) - A Python library for scraping the Google search engine.
-
+[`googlesearch-python`](https://pypi.org/project/googlesearch-python/) - "A Python library for scraping the Google search engine."
 
 
 ## Community
@@ -61,6 +79,9 @@ After all, it is only when we ask questions that we can learn anything.
 
 Contributions are more than welcome, maintainers are always invited, and if you can ask questions you're a VIP.
 
+## Contributors
+
+[![](https://github.com/ronnathaniel.png?size=50)](https://github.com/ronnathaniel)  [![](https://github.com/itaybachar.png?size=50)](https://github.com/itaybachar)
 ## Copyright
 
 MIT License. 
